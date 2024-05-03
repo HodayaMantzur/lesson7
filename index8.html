@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+     let email = prompt("Enter email:")
+     let twoStrudels = false;
+     let emailValid = false;
+
+
+     if (!email.includes(" ")&& email.includes("@")) {
+        let twoStrudels = false ;
+     
+    for (let i = email.indexOf("@")+1; i < email.length; i++) {
+        if (email[i] === "@") {
+       twoStrudels = true
+       } 
+    }
+    if (email[0] !=="@"  && email[email.length-1]!=="@" &&  !twoStrudels) {
+        if (email.endsWith(".com") || email.endsWith(".org") || email.endsWith(".net")){
+        emailValid = true
+       }
+     }
+     
+     if (emailValid===true) {
+                console.log("A valid email address!!!");
+
+     }
+ 
+    else {console.log("Invalid email address");
+
+    }
+  }
+    </script>
+    
+</body>
+</html>

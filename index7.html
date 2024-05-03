@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  let Email = prompt("Enter your email address:")
+ let isValid = true
+
+   if (Email.indexOf("@")===-1 || Email.indexOf("@")!==Email.lastIndexOf) {
+    isValid = false
+   }
+   if (Email.indexOf("@")===0||Email.indexOf("@")===Email.length-1) {
+    isValid =false
+   }
+   if (Email.indexOf("@")!==-1 && Email.indexOf(".")===-1) {
+    isValid =false
+   }
+
+
+
+    </script>
+    
+</body>
+</html>

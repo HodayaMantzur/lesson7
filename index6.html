@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Weather  </h1>
+    <script>
+
+      let city = prompt("your city: ")
+      let sun = prompt("Is it sunny now?", true , false)
+      let temp = parseFloat( prompt("Celsius temperature now?"))
+
+       console.log(sun)
+
+
+      if (sun === true && temp <30 && temp >20 ){
+        console.log("It is a great day to go out in" , city)
+      }
+      else if(sun !== true || temp < 20) {
+        console.log("Better to stay inside in", city)
+     }
+     else{console.log("The weather condition in",city,"is moderate")}
+
+
+
+    </script>
+</body>
+</html>
